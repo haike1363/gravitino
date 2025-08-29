@@ -28,6 +28,7 @@ public class CredentialConstants {
   public static final String CREDENTIAL_CACHE_MAX_SIZE = "credential-cache-max-size";
   public static final String S3_TOKEN_EXPIRE_IN_SECS = "s3-token-expire-in-secs";
   public static final String OSS_TOKEN_EXPIRE_IN_SECS = "oss-token-expire-in-secs";
+  public static final String COS_TOKEN_EXPIRE_IN_SECS = "cos-token-expire-in-secs";
   public static final String ADLS_TOKEN_EXPIRE_IN_SECS = "adls-token-expire-in-secs";
 
   /** The HTTP header used to get the credential from fileset location */

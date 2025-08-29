@@ -52,6 +52,7 @@ dependencies {
   testImplementation(project(":bundles:aws-bundle", configuration = "shadow"))
   testImplementation(project(":bundles:gcp-bundle", configuration = "shadow"))
   testImplementation(project(":bundles:aliyun-bundle", configuration = "shadow"))
+  testImplementation(project(":bundles:cos-bundle", configuration = "shadow"))
   testImplementation(project(":bundles:azure-bundle", configuration = "shadow"))
 
   testImplementation(libs.awaitility)
@@ -105,6 +106,7 @@ tasks.test {
   // this task depends on :bundles:aws-bundle:shadowJar
   dependsOn(":bundles:aws-bundle:jar")
   dependsOn(":bundles:aliyun-bundle:jar")
+  dependsOn(":bundles:cos-bundle:jar")
   dependsOn(":bundles:gcp-bundle:jar")
   dependsOn(":bundles:azure-bundle:jar")
 }
